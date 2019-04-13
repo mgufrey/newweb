@@ -14,6 +14,10 @@ body{
 	color:#313131;
 	overflow-x: hidden;
 }
+::-moz-selection {
+  background-color: #000;
+  color:#FFF;
+}
 ::selection {
   background-color: #000;
   color:#FFF;
@@ -51,6 +55,10 @@ p{
 	width: 100vw;
 	height: .8em;
 
+	display: -webkit-inline-box;
+
+	display: -ms-inline-flexbox;
+
 	display: inline-flex;
 
 	font-size: 40vw;
@@ -59,8 +67,14 @@ p{
 	top: 1.5vh;
 	z-index: -1;
 
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+
+	    -ms-flex-align: center;
+
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	overflow: hidden;
 
 }
@@ -76,9 +90,17 @@ p{
 	position: absolute;
 	top: 15vh;
 
+	display: -webkit-inline-box;
+
+	display: -ms-inline-flexbox;
+
 	display: inline-flex;
 
 	text-align: right;
+
+	left: 0;
+
+	right: 0;
 
 }
 
@@ -110,7 +132,7 @@ img{
 	padding: 50px 0;
 
 	position: fixed;
-	z-index: 1;
+	z-index: 10;
 
 	mix-blend-mode: difference;
 
@@ -168,40 +190,58 @@ img{
 }	
 
 .skills{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0 25px;
     margin: 25px 0;
     
-    align-items: center;
+    -webkit-box-align: center;
+    
+        -ms-flex-align: center;
+    
+            align-items: center;
 
     color: inherit;
     font-weight: 300;
     font-size: 30px !important;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 
 /*PROJECT CARDS*/
-.cards{
+/*w stands for work*/
+.co-w{
+width: 50%;
+display: inline-flex;
+}
+
+/*.cards{
 	margin-bottom: 50px;
-    background-color: melon;
-    width: 100%;
+    background-color: grey;
+    width: 1216px;
     height: 447px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .card-l{
 	text-align: left;
 }
 .card-r{
-	text-align: right
+	align-content: right;
+	text-align: right;
+	position: absolute;
+	top:80%;
+	right: 0;
 
 }
 .proj-card-im{
 	width: 447px;
 	height: 447px;
-	overflow: hidden;
 	position: absolute;
 	top:0;
 
@@ -212,22 +252,31 @@ img{
     height: 447px;
     overflow: hidden;
     z-index: 2;
+    text-overflow: hidden;
+}
+.clipping{
+    width: 447px;
+    height: 447px;
+    overflow: hidden;
+    z-index: 2;
+    text-overflow: hidden;
 }
 .clipping h2{
 	width: auto;
 	z-index: 2;
 }
-.clipping img{
-}
 
 .cards h2{
 	position: relative;
-    top: -389px;
+    top: -85%;
 }
-.sm-txt{
+.sm-txt-l{
 	margin-left: 125px;
 }
+.sm-txt-r{
+	margin-right: 125px;
+}
+
 .wht-ttl{
 	color: #fff;
-    top: -479px !important;
-}
+}*/
