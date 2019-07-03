@@ -68,6 +68,10 @@ img{
 ::-webkit-scrollbar {
   width: 0px;
 }
+[data-barba="wrapper"]{
+	height: 100vh;
+	margin:0;
+}
 
 #bg-wrap{
 	width: 100vw;

@@ -8,7 +8,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"></head>
 <body>
-	
+<div data-barba="wrapper">
+  <div data-barba="container" data-barba-namespace="project-page">
+
+
 	<div id="mn-wr">
 	<a href="work.html">
 		<div class="bk-btn">
@@ -33,13 +36,21 @@
 			<p>
 				because it's all about moving your way
 			</p>
-			<a href="#section1">scrolldown</a>
 		</div>
 
 	</div>
-	<section id="section1">
-		
-	</section>
+</div>
+</div>
+
+<!-- load some animation library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+<!-- load barba.js (this will use the latest UMD version of the library) -->
+<script src="https://unpkg.com/@barba/core"></script>
+
+<!-- load your scripts -->
+<script src="_js/main-web.js"></script>
+
 
 </body>
 </html>
